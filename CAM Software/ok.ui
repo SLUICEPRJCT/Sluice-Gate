@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>129</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>285</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Notification Dispatched</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>mainICo.png</normaloff>mainICo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    color: #eaeaea;
+    background-color: #2b2b2b;
+    selection-background-color: #3daee9;
+    selection-color: #eaeaea;
+}
+
+QHeaderView::section {
+    background-color: #3b3b3b;
+    color: #eaeaea;
+    padding: 5px;
+}
+
+QTabWidget::pane {
+    border: 1px solid #222222;
+    background-color: #2b2b2b;
+}
+
+QTabBar::tab {
+    background-color: #2b2b2b;
+    color: #eaeaea;
+    padding: 8px;
+    margin-right: 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #3daee9;
+    color: #eaeaea;
+}
+
+QLineEdit, QTextEdit, QPlainTextEdit, QListView, QTableView, QTreeView {
+    background-color: #333333;
+    color: #eaeaea;
+    selection-background-color: #3daee9;
+    selection-color: #eaeaea;
+    border: 1px solid #555555;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QProgressBar {
+    border: 1px solid #222222;
+    border-radius: 5px;
+    background-color: #555555;
+    color: #eaeaea;
+}
+
+QProgressBar::chunk {
+    background-color: #3daee9;
+    width: 5px;
+    margin: 0.5px;
+}
+
+QPushButton {
+    color: #eaeaea;
+    background-color: #333333;
+    border: 1px solid #555555;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+QPushButton:hover {
+    background-color: #3daee9;
+    color: #eaeaea;
+}
+
+QToolButton {
+    color: #eaeaea;
+    background-color: #333333;
+    border: 1px solid #555555;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+QToolButton:hover, QToolButton:checked {
+    background-color: #3daee9;
+    color: #eaeaea;
+}
+
+QComboBox {
+    color: #eaeaea;
+    background-color: #333333;
+    border: 1px solid #555555;
+    padding: 2px;
+    border-radius: 2px;
+    min-width: 6em;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #555555;
+    border-left-style: solid;
+}
+
+QComboBox::down-arrow {
+    image: url(arrow-down.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox::down-arrow:hover {
+    image: url(arrow-down-hover.png);
+}
+
+QScrollBar {
+    border: 1px solid #222222;
+    background-color: #2b2b2b;
+}
+
+QScrollBar:horizontal {
+    height: 15px;
+    margin: 3px 15px 3px 15px;
+}
+
+QScrollBar:vertical {
+width: 15px;
+margin: 15px 3px 15px 3px;
+}
+
+QScrollBar::handle {
+background-color: #555555;
+border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+background-color: #3daee9;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+background-color: #2b2b2b;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+border: 1px solid #222222;
+background-color: #555555;
+}
+
+QCheckBox, QRadioButton {
+color: #eaeaea;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+width: 15px;
+height: 15px;
+border: 1px solid #555555;
+border-radius: 2px;
+background-color: #333333;
+}
+
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled {
+border-color: #777777;
+background-color: #444444;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+background-color: #3daee9;
+border-color: #3daee9;
+}
+
+QMenuBar {
+background-color: #2b2b2b;
+color: #eaeaea;
+}
+
+QMenuBar::item {
+padding: 2px 10px 2px 10px;
+background-color: transparent;
+}
+
+QMenuBar::item:selected {
+background-color: #3daee9;
+color: #eaeaea;
+}
+
+QMenu {
+background-color: #2b2b2b;
+border: 1px solid #222222;
+}
+
+QMenu::item {
+background-color: transparent;
+padding: 2px 20px 2px 20px;
+}
+
+QMenu::item:selected {
+background-color: #3daee9;
+color: #eaeaea;
+}
+
+QTreeView::item:selected {
+background-color: #3daee9;
+color: #eaeaea;
+}
+
+QTreeView::item:hover {
+background-color: #3daee9;
+color: #eaeaea;
+}
+
+QHeaderView::section:pressed {
+background-color: #3daee9;
+}
+
+QTableView::item:selected, QListView::item:selected, QTreeView::item:selected {
+background-color: #3daee9;
+color: #eaeaea;
+}
+
+QTableView::item:hover, QListView::item:hover, QTreeView::item:hover {
+background-color: #3daee9;
+color: #eaeaea;
+}</string>
+  </property>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>384</x>
+     <y>100</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>1. Message sent successfully. Please use this system responsibly for emergency use only.</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>491</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>2. Cooldown mode enabled to prevent misuse. Wait for the cooldown period to end before sending more messages.</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

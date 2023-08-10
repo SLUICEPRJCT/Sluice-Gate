@@ -1,0 +1,1 @@
+put your own firebase-sdk.json in the directory
